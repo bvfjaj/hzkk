@@ -1,7 +1,7 @@
 local LightingService = game:GetService("Lighting")
 local TweenService = game:GetService("TweenService")
 local LocalPlayer = game:GetService("Players").LocalPlayer
-local ScreenGui = Instance.new("ScreenGui", LocalPlayer:WaitForChild("PlayerGui"))
+local ScreenGui = Instance.new("ScreenGui", gethui and gethui() or LocalPlayer:WaitForChild("PlayerGui"))
 local BlurEffect = Instance.new("BlurEffect", LightingService)
 local BackgroundFrame = Instance.new("Frame", ScreenGui)
 local FrameGradient = Instance.new("UIGradient", BackgroundFrame)
